@@ -92,7 +92,10 @@ namespace Microsoft.Diagnostics.Runtime
                 _modules = new List<ModuleInfo>(_core.LoadedImages.Count);
                 foreach (ElfLoadedImage img in _core.LoadedImages)
                     if ((ulong)img.BaseAddress != interpreter && !img.Path.StartsWith("/dev"))
+                    {
                         _modules.Add(CreateModuleInfo(img));
+                        Console.WriteLine($"Add module img.BaseAddress={img.BaseAddress:X} img.Path={img.Path}");
+                    }
             }
 
             return _modules;

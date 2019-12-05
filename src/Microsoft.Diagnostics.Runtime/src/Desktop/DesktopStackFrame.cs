@@ -3,6 +3,7 @@
 // See the LICENSE file in the project root for more information.
 
 using System.Text;
+using System;
 using Microsoft.Diagnostics.Runtime.ICorDebug;
 
 namespace Microsoft.Diagnostics.Runtime.Desktop
@@ -69,6 +70,7 @@ namespace Microsoft.Diagnostics.Runtime.Desktop
 
         public DesktopStackFrame(DesktopRuntimeBase runtime, DesktopThread thread, byte[] context, ulong ip, ulong sp, ulong md)
         {
+            Console.WriteLine($"A ip={ip:X} sp={sp:X} md={md:X} ({md})");
             _runtime = runtime;
             _thread = thread;
             _context = context;
@@ -82,6 +84,7 @@ namespace Microsoft.Diagnostics.Runtime.Desktop
 
         public DesktopStackFrame(DesktopRuntimeBase runtime, DesktopThread thread, byte[] context, ulong sp, ulong md)
         {
+            Console.WriteLine($"B sp={sp:X} md={md:X}");
             _runtime = runtime;
             _thread = thread;
             _context = context;
@@ -94,6 +97,8 @@ namespace Microsoft.Diagnostics.Runtime.Desktop
 
         public DesktopStackFrame(DesktopRuntimeBase runtime, DesktopThread thread, byte[] context, ulong sp, string method, ClrMethod innerMethod)
         {
+            string n = "null";
+            Console.WriteLine($"C sp={sp:X} method={method} method={(innerMethod != null ? innerMethod.Name : n)}");
             _runtime = runtime;
             _thread = thread;
             _context = context;

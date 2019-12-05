@@ -721,24 +721,31 @@ namespace Microsoft.Diagnostics.Runtime.Desktop
                 if (stackwalk == null)
                     yield break;
 
-                byte[] context = ContextHelper.Context;
+                //byte[] context = ContextHelper.Context;
+                //Console.WriteLine($"Context={BitConverter.ToString(context).Replace("-", "")}");
                 do
                 {
+                    byte[] context = ContextHelper.Context;
+                    Console.WriteLine($"GetContext ContextFlags={ContextHelper.ContextFlags} Length={ContextHelper.Length}");
                     if (!stackwalk.GetContext(ContextHelper.ContextFlags, ContextHelper.Length, out uint size, context))
                         break;
 
+                    Console.WriteLine($"context={BitConverter.ToString(context).Replace("-", "")} size={size} littleendian={BitConverter.IsLittleEndian}");
+
                     ulong ip, sp;
 
-                    if (PointerSize == 4)
-                    {
-                        ip = BitConverter.ToUInt32(context, ContextHelper.InstructionPointerOffset);
-                        sp = BitConverter.ToUInt32(context, ContextHelper.StackPointerOffset);
-                    }
-                    else
-                    {
-                        ip = BitConverter.ToUInt64(context, ContextHelper.InstructionPointerOffset);
-                        sp = BitConverter.ToUInt64(context, ContextHelper.StackPointerOffset);
-                    }
+                    //if (PointerSize == 4)
+                    //{
+                        ip = BitConverter.ToUInt32(context, 64);//ContextHelper.InstructionPointerOffset);
+                        sp = BitConverter.ToUInt32(context, 56);//ContextHelper.StackPointerOffset);
+                    //}
+                    //else
+                    //{
+                    //    ip = BitConverter.ToUInt64(context, ContextHelper.InstructionPointerOffset);
+                    //    sp = BitConverter.ToUInt64(context, ContextHelper.StackPointerOffset);
+                    //}
+
+                    Console.WriteLine($"ip={ip:X} sp={sp:X}");
 
                     ulong frameVtbl = stackwalk.GetFrameVtable();
                     if (frameVtbl != 0)

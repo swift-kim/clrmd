@@ -71,7 +71,16 @@ namespace Microsoft.Diagnostics.Runtime.Linux
         public int ReadMemory(long address, byte[] buffer, int bytesRequested)
         {
             if (_virtualAddressSpace == null)
-                _virtualAddressSpace = new ELFVirtualAddressSpace(ElfFile.ProgramHeaders, _reader.DataSource);
+            {
+                if (ElfFile.VirtualAddressReader != null && ElfFile.VirtualAddressReader.DataSource is ELFVirtualAddressSpace)
+                {
+                    _virtualAddressSpace = ElfFile.VirtualAddressReader.DataSource as ELFVirtualAddressSpace;
+                }
+                else
+                {
+                    _virtualAddressSpace = new ELFVirtualAddressSpace(ElfFile.ProgramHeaders, _reader.DataSource);
+                }
+            }
 
             return _virtualAddressSpace.Read(address, buffer, 0, bytesRequested);
         }
