@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Reflection.PortableExecutable;
 using Microsoft.Diagnostics.Runtime.ICorDebug;
 using Microsoft.Diagnostics.Runtime.Interop;
 using Microsoft.Diagnostics.Runtime.Utilities;
@@ -281,32 +282,32 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             if (filePath == null)
                 return E_FAIL;
 
-            // We do not put a using statement here to prevent needing to load/unload the binary over and over.
+            // We keep the file open to prevent needing to load/unload over and over.
             PEImage peimage = _dataTarget.FileLoader.LoadPEImage(filePath);
             if (peimage == null)
                 return E_FAIL;
 
             Debug.Assert(peimage.IsValid);
 
-            uint rva = mdRva;
-            uint size = bufferSize;
-            if (rva == 0)
+            Stream peStream = peimage.Stream;
+            peStream.Seek(0, SeekOrigin.Begin);
+
+            using (var peReader = new PEReader(peStream, PEStreamOptions.LeaveOpen))
             {
-                IMAGE_DATA_DIRECTORY comDescriptor = peimage.OptionalHeader.ComDescriptorDirectory;
-                if (comDescriptor.VirtualAddress == 0)
+                if (!peReader.HasMetadata)
                     return E_FAIL;
 
-                rva = comDescriptor.VirtualAddress;
-                size = Math.Min(bufferSize, comDescriptor.Size);
+                PEMemoryBlock metadataInfo = peReader.GetMetadata();
+                unsafe
+                {
+                    int size = Math.Min((int)bufferSize, metadataInfo.Length);
+                    Marshal.Copy(metadataInfo.GetContent().ToArray(), 0, buffer, size);
+
+                    if (pDataSize != null)
+                        *pDataSize = size;
+                }
             }
 
-            checked
-            {
-                int read = peimage.Read(buffer, (int)rva, (int)size);
-                if (pDataSize != null)
-                    *pDataSize = read;
-            }
-            
             return S_OK;
         }
 

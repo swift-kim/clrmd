@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Threading;
 using Microsoft.Diagnostics.Runtime.DacInterface;
 using Microsoft.Diagnostics.Runtime.ICorDebug;
@@ -721,18 +722,20 @@ namespace Microsoft.Diagnostics.Runtime.Desktop
                 if (stackwalk == null)
                     yield break;
 
-                //byte[] context = ContextHelper.Context;
-                //Console.WriteLine($"Context={BitConverter.ToString(context).Replace("-", "")}");
+                byte[] context = ContextHelper.Context;
                 do
                 {
-                    byte[] context = ContextHelper.Context;
-                    Console.WriteLine($"GetContext ContextFlags={ContextHelper.ContextFlags} Length={ContextHelper.Length}");
                     if (!stackwalk.GetContext(ContextHelper.ContextFlags, ContextHelper.Length, out uint size, context))
                         break;
 
-                    Console.WriteLine($"context={BitConverter.ToString(context).Replace("-", "")} size={size} littleendian={BitConverter.IsLittleEndian}");
+                    //GCHandle handle = GCHandle.Alloc(context, GCHandleType.Pinned);
+                    //ArmContext a = (ArmContext)Marshal.PtrToStructure((IntPtr)handle, typeof(ArmContext));
+                    //handle.Free();
 
                     ulong ip, sp;
+
+                    //ip = a.Pc;
+                    //sp = a.Sp;
 
                     //if (PointerSize == 4)
                     //{
@@ -745,7 +748,7 @@ namespace Microsoft.Diagnostics.Runtime.Desktop
                     //    sp = BitConverter.ToUInt64(context, ContextHelper.StackPointerOffset);
                     //}
 
-                    Console.WriteLine($"ip={ip:X} sp={sp:X}");
+                    //Console.WriteLine($"ip={ip:X} sp={sp:X}");
 
                     ulong frameVtbl = stackwalk.GetFrameVtable();
                     if (frameVtbl != 0)

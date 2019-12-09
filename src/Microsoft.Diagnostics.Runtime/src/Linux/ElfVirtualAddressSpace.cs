@@ -21,13 +21,6 @@ namespace Microsoft.Diagnostics.Runtime.Linux
             // FileSize == 0 means the segment isn't backed by any data
             _segments = segments.Where((programHeader) => programHeader.FileSize > 0).ToArray();
             _addressSpace = addressSpace;
-
-            // /opt/usr/home/owner/share/tmp/sdk_tools/clrmd/coredump.6354 (5017600)
-            Console.WriteLine($"ELFVirtualAddressSpace addressSpace={addressSpace.Name} ({addressSpace.Length})");
-            foreach (ElfProgramHeader seg in _segments)
-            {
-                Console.WriteLine($"ELFVirtualAddressSpace VirtualAddress={seg.VirtualAddress:X} ({seg.VirtualSize:X}) FileOffset={seg.FileOffset:X} ({seg.FileSize:X})");
-            }
         }
 
         public long Length { get; }

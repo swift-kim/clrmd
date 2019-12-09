@@ -95,7 +95,9 @@ namespace Microsoft.Diagnostics.Runtime.Utilities
             FileEntry entry = new FileEntry(fileName, buildTimeStamp, imageSize);
             string result = GetFileEntry(entry);
             if (result != null)
+            {
                 return result;
+            }
 
             HashSet<FileEntry> missingFiles = _missingFiles;
             if (IsMissing(missingFiles, entry))
@@ -118,17 +120,28 @@ namespace Microsoft.Diagnostics.Runtime.Utilities
                     if (exeIndexPath == null)
                         exeIndexPath = GetIndexPath(fileName, buildTimeStamp, imageSize);
 
-                    string target = TryGetFileFromServer(element.Target, exeIndexPath, element.Cache ?? activeSymbolCache);
-                    if (target == null)
-                    {
-                        Trace($"Server '{element.Target}' did not have file '{Path.GetFileName(fileName)}' with timestamp={buildTimeStamp:x} and filesize={imageSize:x}.");
-                    }
-                    else if (ValidateBinary(target, buildTimeStamp, imageSize, checkProperties))
-                    {
-                        Trace($"Found '{fileName}' on server '{element.Target}'.  Copied to '{target}'.");
-                        SetFileEntry(missingFiles, entry, target);
-                        return target;
-                    }
+                    //string filePath = fullPath; //fullPath.Replace("/proc/self/fd/57/bin", "/opt/usr/globalapps/org.tizen.example.Alarm/bin");
+                    //Console.WriteLine($"Trying {filePath} instead of {element.Target} > {exeIndexPath}");
+                    //if (ValidateBinary(filePath, buildTimeStamp, imageSize, checkProperties))
+                    //{
+                    //    Trace($"Found '{fileName}' at '{filePath}'.");
+                    //    SetFileEntry(missingFiles, entry, filePath);
+                    //    return filePath;
+                    //}
+                    SetFileEntry(missingFiles, entry, null);
+                    return null;
+
+                    //string target = TryGetFileFromServer(element.Target, exeIndexPath, element.Cache ?? activeSymbolCache);
+                    //if (target == null)
+                    //{
+                    //    Trace($"Server '{element.Target}' did not have file '{Path.GetFileName(fileName)}' with timestamp={buildTimeStamp:x} and filesize={imageSize:x}.");
+                    //}
+                    //else if (ValidateBinary(target, buildTimeStamp, imageSize, checkProperties))
+                    //{
+                    //    Trace($"Found '{fileName}' on server '{element.Target}'.  Copied to '{target}'.");
+                    //    SetFileEntry(missingFiles, entry, target);
+                    //    return target;
+                    //}
                 }
                 else if (element.IsCache)
                 {
