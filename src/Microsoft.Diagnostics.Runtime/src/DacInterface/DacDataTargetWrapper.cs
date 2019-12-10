@@ -54,9 +54,9 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             builder.Complete();
         }
 
-        public int ReadVirtual(IntPtr self, ulong address, IntPtr buffer, uint bytesRequested, out uint bytesRead)
+        public int ReadVirtual(IntPtr self, long longAddress, IntPtr buffer, uint bytesRequested, out uint bytesRead)
         {
-            if (ReadVirtual(self, address, buffer, (int)bytesRequested, out int read) >= 0)
+            if (ReadVirtual(self, longAddress, buffer, (int)bytesRequested, out int read) >= 0)
             {
                 bytesRead = (uint)read;
                 return S_OK;
@@ -123,7 +123,7 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             return S_OK;
         }
 
-        public int GetImageBase(IntPtr self, string imagePath, out ulong baseAddress)
+        public int GetImageBase(IntPtr self, string imagePath, out long baseAddress)
         {
             imagePath = Path.GetFileNameWithoutExtension(imagePath);
 
@@ -132,7 +132,7 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
                 string moduleName = Path.GetFileNameWithoutExtension(module.FileName);
                 if (imagePath.Equals(moduleName, StringComparison.CurrentCultureIgnoreCase))
                 {
-                    baseAddress = module.ImageBase;
+                    baseAddress = IntPtr.Size == 4 ? (int)module.ImageBase : (long)module.ImageBase;
                     return S_OK;
                 }
             }
@@ -141,8 +141,10 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             return E_FAIL;
         }
 
-        public int ReadVirtual(IntPtr self, ulong address, IntPtr buffer, int bytesRequested, out int bytesRead)
+        public int ReadVirtual(IntPtr self, long longAddress, IntPtr buffer, int bytesRequested, out int bytesRead)
         {
+            ulong address = IntPtr.Size == 4 ? (uint)longAddress : (ulong)longAddress;
+
             if (_dataReader.ReadMemory(address, buffer, bytesRequested, out int read))
             {
                 bytesRead = read;
@@ -193,12 +195,14 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             return E_FAIL;
         }
 
-        public int ReadVirtual(ulong address, byte[] buffer, uint bytesRequested, out uint bytesRead)
+        public int ReadVirtual(long longAddress, byte[] buffer, uint bytesRequested, out uint bytesRead)
         {
+            ulong address = IntPtr.Size == 4 ? (uint)longAddress : (ulong)longAddress;
+
             return ReadMemory(address, buffer, bytesRequested, out bytesRead);
         }
 
-        public int WriteVirtual(IntPtr self, ulong address, IntPtr buffer, uint bytesRequested, out uint bytesWritten)
+        public int WriteVirtual(IntPtr self, long longAddress, IntPtr buffer, uint bytesRequested, out uint bytesWritten)
         {
             // This gets used by MemoryBarrier() calls in the dac, which really shouldn't matter what we do here.
             bytesWritten = bytesRequested;
@@ -215,11 +219,11 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             _nextTLSValue = value;
         }
 
-        public int GetTLSValue(IntPtr self, uint threadID, uint index, out ulong value)
+        public int GetTLSValue(IntPtr self, uint threadID, uint index, out long value)
         {
             if (_nextTLSValue.HasValue)
             {
-                value = _nextTLSValue.Value;
+                value = IntPtr.Size == 4 ? (int)_nextTLSValue : (long)_nextTLSValue.Value;
                 return S_OK;
             }
 
@@ -227,7 +231,7 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             return E_FAIL;
         }
 
-        public int SetTLSValue(IntPtr self, uint threadID, uint index, ulong value)
+        public int SetTLSValue(IntPtr self, uint threadID, uint index, long value)
         {
             return E_FAIL;
         }
@@ -336,7 +340,7 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
 
         uint ICorDebugDataTarget.ReadVirtual(ulong address, IntPtr buffer, uint bytesRequested)
         {
-            if (ReadVirtual(IntPtr.Zero, address, buffer, (int)bytesRequested, out int read) >= 0)
+            if (ReadVirtual(IntPtr.Zero, (long)address, buffer, (int)bytesRequested, out int read) >= 0)
                 return (uint)read;
 
             throw new Exception();
@@ -368,12 +372,12 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
         private delegate int GetPointerSizeDelegate(IntPtr self, out uint pointerSize);
 
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        private delegate int GetImageBaseDelegate(IntPtr self, [In][MarshalAs(UnmanagedType.LPWStr)] string imagePath, out ulong baseAddress);
+        private delegate int GetImageBaseDelegate(IntPtr self, [In][MarshalAs(UnmanagedType.LPWStr)] string imagePath, out long baseAddress);
 
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
         private delegate int ReadVirtualDelegate(
             IntPtr self,
-            ulong address,
+            long longAddress,
             IntPtr buffer,
             int bytesRequested,
             out int bytesRead);
@@ -381,7 +385,7 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
         private delegate int WriteVirtualDelegate(
             IntPtr self,
-            ulong address,
+            long longAddress,
             IntPtr buffer,
             uint bytesRequested,
             out uint bytesWritten);
@@ -391,14 +395,14 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             IntPtr self,
             uint threadID,
             uint index,
-            out ulong value);
+            out long value);
 
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
         private delegate int SetTLSValueDelegate(
             IntPtr self,
             uint threadID,
             uint index,
-            ulong value);
+            long value);
 
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
         private delegate int GetCurrentThreadIDDelegate(IntPtr self, out uint threadID);

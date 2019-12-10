@@ -14,7 +14,7 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
 
         private IXCLRDataStackWalkVTable* VTable => (IXCLRDataStackWalkVTable*)_vtable;
 
-        private readonly byte[] _ulongBuffer = new byte[8];
+        private readonly byte[] _longBuffer = new byte[8];
         private RequestDelegate _request;
         private NextDelegate _next;
         private GetContextDelegate _getContext;
@@ -28,9 +28,9 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
         {
             InitDelegate(ref _request, VTable->Request);
 
-            int hr = _request(Self, 0xf0000000, 0, null, (uint)_ulongBuffer.Length, _ulongBuffer);
+            int hr = _request(Self, 0xf0000000, 0, null, (uint)_longBuffer.Length, _longBuffer);
             if (hr == S_OK)
-                return BitConverter.ToUInt64(_ulongBuffer, 0);
+                return IntPtr.Size == 4 ? BitConverter.ToUInt32(_longBuffer, 0) : BitConverter.ToUInt64(_longBuffer, 0);
 
             return 0;
         }
