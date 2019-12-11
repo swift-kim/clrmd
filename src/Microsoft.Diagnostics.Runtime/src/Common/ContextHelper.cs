@@ -55,12 +55,13 @@ namespace Microsoft.Diagnostics.Runtime
 
             if (IntPtr.Size == 4)
             {
-                _ipOffset = 184;
-                _spOffset = 196;
-                _context = new byte[716];
+                // Temporarily hard-coded for Arm32 - May not work for x86 machines
+                _ipOffset = 64;
+                _spOffset = 56;
+                _context = new byte[416];
                 _contextFlags = 0x1003f;
             }
-            else
+            else // Amd64
             {
                 _ipOffset = 248;
                 _spOffset = 152;

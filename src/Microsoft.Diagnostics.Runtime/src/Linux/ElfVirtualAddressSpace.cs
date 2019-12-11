@@ -27,6 +27,8 @@ namespace Microsoft.Diagnostics.Runtime.Linux
 
         public int Read(long position, byte[] buffer, int bufferOffset, int count)
         {
+            position = IntPtr.Size == 4 ? (uint)position : position;
+
             int bytesRead = 0;
             while (bytesRead != count)
             {
