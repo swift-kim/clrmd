@@ -55,8 +55,8 @@ namespace Microsoft.Diagnostics.Runtime
 
             if (IntPtr.Size == 4)
             {
-                _ipOffset = 184;
-                _spOffset = 196;
+                _ipOffset = 64; // 184; // Temporarily hard-coded
+                _spOffset = 56; // 196; // Temporarily hard-coded
                 _context = new byte[716];
                 _contextFlags = 0x1003f;
             }
