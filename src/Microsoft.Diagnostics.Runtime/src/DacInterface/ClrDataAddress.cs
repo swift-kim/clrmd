@@ -25,13 +25,15 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
         /// Creates an instance of ClrDataAddress.
         /// </summary>
         /// <param name="value"></param>
-        public ClrDataAddress(long value) => Value = value;
+        public ClrDataAddress(long value) => Value = IntPtr.Size == 4 ? (int)value : value;
 
         /// <summary>
         /// Returns the value of this address and un-sign extends the value if appropriate.
         /// </summary>
         /// <param name="cda">The address to convert.</param>
         public static implicit operator ulong(ClrDataAddress cda) => cda.AsUInt64();
+
+        public static implicit operator ClrDataAddress(ulong value) => new ClrDataAddress((long)value);
 
         /// <summary>
         /// Returns the value of this address and un-sign extends the value if appropriate.

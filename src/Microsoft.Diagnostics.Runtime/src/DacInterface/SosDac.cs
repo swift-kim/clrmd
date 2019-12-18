@@ -775,7 +775,7 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
         private delegate int DacGetUlongArrayWithArg(IntPtr self, ulong arg, int count, [Out] ClrDataAddress[]? values, out int needed);
 
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
-        private delegate int DacGetCharArrayWithArg(IntPtr self, ulong arg, int count, byte* values, [Out] out int needed);
+        private delegate int DacGetCharArrayWithArg(IntPtr self, ClrDataAddress arg, int count, byte* values, [Out] out int needed);
 
         [UnmanagedFunctionPointer(CallingConvention.StdCall)]
         private delegate int DacGetByteArrayWithArg(IntPtr self, ulong arg, int count, byte* values, [Out] out int needed);
