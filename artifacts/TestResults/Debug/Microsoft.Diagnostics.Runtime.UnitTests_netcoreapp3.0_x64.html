@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
+  <head>
+    <title>xUnit.net Test Results</title>
+    <style type="text/css">
+          body { font-family: Calibri, Verdana, Arial, sans-serif; background-color: White; color: Black; }
+          h2,h3,h4,h5 { margin: 0; padding: 0; }
+          h3 { font-weight: normal; }
+          h4 { margin: 0.5em 0; }
+          h5 { font-weight: normal; font-style: italic; margin-bottom: 0.75em; }
+          h6 { font-size: 0.9em; font-weight: bold; margin: 0.5em 0 0 0.75em; padding: 0; }
+          pre,table { font-family: Consolas; font-size: 0.8em; margin: 0 0 0 1em; padding: 0; }
+          table { padding-bottom: 0.25em; }
+          th { padding: 0 0.5em; border-right: 1px solid #bbb; text-align: left; }
+          td { padding-left: 0.5em; }
+          .divided { border-top: solid 1px #f0f5fa; padding-top: 0.5em; }
+          .row, .altrow { padding: 0.1em 0.3em; }
+          .row { background-color: #f0f5fa; }
+          .altrow { background-color: #e1ebf4; }
+          .success, .failure, .skipped { font-family: Arial Unicode MS; font-weight: normal; float: left; width: 1em; display: block; }
+          .success { color: #0c0; }
+          .failure { color: #c00; }
+          .skipped { color: #cc0; }
+          .timing { float: right; }
+          .indent { margin: 0.25em 0 0.5em 2em; }
+          .clickable { cursor: pointer; }
+          .testcount { font-size: 85%; }
+        </style>
+    <script language="javascript">
+          function ToggleClass(id) {
+            var elem = document.getElementById(id);
+            if (elem.style.display == "none") {
+              elem.style.display = "block";
+            }
+            else {
+              elem.style.display = "none";
+            }
+          }
+        </script>
+  </head>
+  <body>
+    <h3 class="divided">
+      <b>Assemblies Run</b>
+    </h3>
+    <div>Microsoft.Diagnostics.Runtime.UnitTests.dll</div>
+    <h3 class="divided">
+      <b>Summary</b>
+    </h3>
+    <div>
+          Tests run: <a href="#all"><b>16</b></a> —
+          
+          Run time: <b>4.621s</b>,
+          Finished: <b>01/03/2020 15:51:15</b></div>
+    <br />
+    <h2>
+      <a id="all" />All tests
+        </h2>
+    <h5>Click test class name to expand/collapse test details</h5>
+    <h3>
+      <span class="timing">0.192s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EY')" ondblclick="ToggleClass('classID0EY')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.UnitTests.ClrObjectTests
+               <span class="testcount">
+                (9 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EY">
+      <div class="row">
+        <span class="timing">0.0016033s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrObjectTests.Equals_WhenDifferentAddress_ReturnsFalse(heap: ClrHeap 0mb 0 segments, type: 40ee2301-7259-4362-a049-2947857cc967, first: 40ee2301-7259-4362-a049-2947857cc967 e1, second: 40ee2301-7259-4362-a049-2947857cc967 36)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0034362s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrObjectTests.Equals_WhenSameAddress_ReturnsTrue(heap: ClrHeap 0mb 0 segments, type: 69185fdf-46f6-49c8-ac77-1d85bd4dbf44, address: 11, first: 69185fdf-46f6-49c8-ac77-1d85bd4dbf44 b, second: 69185fdf-46f6-49c8-ac77-1d85bd4dbf44 b)<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0347784s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrObjectTests.GetObjectField_WhenFieldDoesNotExistInType_ThrowsArgumentException(clrObject: 6eb19ba4-d67e-4499-8199-2e851c7e61fe 66, unexistingField: \"unexistingField3fb99fb3-036e-4b69-aa8b-96c82bd32c0\"...)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0083409s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrObjectTests.GetObjectField_WhenNullObject_ThrowsNullReference(fieldName: \"fieldName75146974-b1cb-4897-bb9f-83dc875b3db8\")<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0093502s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrObjectTests.GetObjectField_WhenTypeHasValueTypeField_ThrowsArgumentException(objectType: 759deb0b-5001-4ffa-a743-7fa6c44768be, clrObject: 759deb0b-5001-4ffa-a743-7fa6c44768be a1, valueField: 99adbd7f-7743-496f-bbd7-a3721530ba40)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.022267s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrObjectTests.GetValueTypeField_WhenFieldFound_ReturnsField(heap: ClrHeap 0mb 0 segments, target: Microsoft.Diagnostics.Runtime.ClrValueType, clrObjectType: 2fef6882-4dc0-4de9-a0d0-afd0b9f373eb, clrObject: 2fef6882-4dc0-4de9-a0d0-afd0b9f373eb c0, clrObjValueField: a6e025f7-9580-42de-b35d-56b133972134)<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0017772s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrObjectTests.IsNull_WhenHasAddress_ReturnsFalse(objectAddress: 240, clrObject: 30948ac4-b70e-4c34-9c98-5f40ad7cda6c f0)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.1029079s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrObjectTests.IsNull_WhenNoAddress_ReturnsTrue<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0070512s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrObjectTests.ulongImplicitCast_WhenCalled_ReturnsAddress(objectAddress: 94, clrObject: 1e17f3ae-9985-44c5-a0d2-c29bc8679e94 5e)<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">0.054s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EVC')" ondblclick="ToggleClass('classID0EVC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.UnitTests.ClrValueTypeTests
+               <span class="testcount">
+                (4 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EVC">
+      <div class="row">
+        <span class="timing">0.0079984s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrValueTypeTests.Equals_WhenDifferentAddress_ReturnsFalse(type: ee15c44d-e8eb-4f62-9358-f4c9770cf434, uno: Microsoft.Diagnostics.Runtime.ClrValueType, dos: Microsoft.Diagnostics.Runtime.ClrValueType)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0208064s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrValueTypeTests.Equals_WhenDifferentTypesButSameAddress_ReturnsFalse(address: 4, uno: Microsoft.Diagnostics.Runtime.ClrValueType, dos: Microsoft.Diagnostics.Runtime.ClrValueType)<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.002875s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrValueTypeTests.Equals_WhenSameAddressAndTypes_ReturnsTrue(address: 242, type: d65d19f4-38a2-49c5-b863-41f8553347ec, uno: Microsoft.Diagnostics.Runtime.ClrValueType, dos: Microsoft.Diagnostics.Runtime.ClrValueType)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0226483s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.ClrValueTypeTests.GetValueTypeField_WhenFieldFound_ReturnsField(target: Microsoft.Diagnostics.Runtime.ClrValueType, structType: 1e48474a-b2cc-4447-bbf5-4a23e9779e0d, someStruct: Microsoft.Diagnostics.Runtime.ClrValueType, structValueField: ff053b70-e6bb-4209-8b0c-ed97208de654)<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">0.167s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EUD')" ondblclick="ToggleClass('classID0EUD')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.UnitTests.IAddressableTypedEntityExtensionTests
+               <span class="testcount">
+                (3 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EUD">
+      <div class="row">
+        <span class="timing">0.0146325s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.IAddressableTypedEntityExtensionTests.GetFieldFrom_WhenFieldFound_ReturnsField(heap: ClrHeap 0mb 0 segments, target: Microsoft.Diagnostics.Runtime.ClrValueType, clrObjectType: e24b1649-59cd-4c5a-9359-2de7ef211e87, rawClrObject: e24b1649-59cd-4c5a-9359-2de7ef211e87 43, clrObjValueField: 80c24864-e216-4c23-98fc-19e8baa07bff)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0630191s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.IAddressableTypedEntityExtensionTests.GetFieldFrom_WhenNullTypePassed_ThrowsArgumentNullException(entity: IAddressableTypedEntityProxy { Address = 0, Type = null }, fieldName: \"fieldName79c9ecf1-2d94-469a-b7c9-b4884f81e6de\")<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0891676s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.UnitTests.IAddressableTypedEntityExtensionTests.GetFieldFrom_WhenStructureHasStructureField_ReturnsField(target: Microsoft.Diagnostics.Runtime.ClrValueType, structType: 591a35df-746a-4f89-bc50-2740df3bdee4, rawStruct: Microsoft.Diagnostics.Runtime.ClrValueType, structValueField: d284ae62-49f1-45b2-bf98-788369a20987)<br clear="all" /></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1043 @@
+﻿<?xml version="1.0" encoding="utf-8"?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
+  <head>
+    <title>xUnit.net Test Results</title>
+    <style type="text/css">
+          body { font-family: Calibri, Verdana, Arial, sans-serif; background-color: White; color: Black; }
+          h2,h3,h4,h5 { margin: 0; padding: 0; }
+          h3 { font-weight: normal; }
+          h4 { margin: 0.5em 0; }
+          h5 { font-weight: normal; font-style: italic; margin-bottom: 0.75em; }
+          h6 { font-size: 0.9em; font-weight: bold; margin: 0.5em 0 0 0.75em; padding: 0; }
+          pre,table { font-family: Consolas; font-size: 0.8em; margin: 0 0 0 1em; padding: 0; }
+          table { padding-bottom: 0.25em; }
+          th { padding: 0 0.5em; border-right: 1px solid #bbb; text-align: left; }
+          td { padding-left: 0.5em; }
+          .divided { border-top: solid 1px #f0f5fa; padding-top: 0.5em; }
+          .row, .altrow { padding: 0.1em 0.3em; }
+          .row { background-color: #f0f5fa; }
+          .altrow { background-color: #e1ebf4; }
+          .success, .failure, .skipped { font-family: Arial Unicode MS; font-weight: normal; float: left; width: 1em; display: block; }
+          .success { color: #0c0; }
+          .failure { color: #c00; }
+          .skipped { color: #cc0; }
+          .timing { float: right; }
+          .indent { margin: 0.25em 0 0.5em 2em; }
+          .clickable { cursor: pointer; }
+          .testcount { font-size: 85%; }
+        </style>
+    <script language="javascript">
+          function ToggleClass(id) {
+            var elem = document.getElementById(id);
+            if (elem.style.display == "none") {
+              elem.style.display = "block";
+            }
+            else {
+              elem.style.display = "none";
+            }
+          }
+        </script>
+  </head>
+  <body>
+    <h3 class="divided">
+      <b>Assemblies Run</b>
+    </h3>
+    <div>Microsoft.Diagnostics.Runtime.Tests.dll</div>
+    <h3 class="divided">
+      <b>Summary</b>
+    </h3>
+    <div>
+          Tests run: <a href="#all"><b>120</b></a> —
+          
+            Failures: <a href="#failures"><b>1</b></a>,
+          
+            Skipped: <a href="#skipped"><b>27</b></a>,
+          
+          Run time: <b>62.631s</b>,
+          Finished: <b>01/03/2020 15:52:13</b></div>
+    <br />
+    <h2>
+      <a id="failures" />Failed tests
+          </h2>
+    <div class="row">
+      <span class="timing">1.7730697s
+        </span>
+      <span class="failure">✘</span>
+       Microsoft.Diagnostics.Runtime.Tests.MinidumpTests.MinidumpCallstackTest<br clear="all" /><pre>Assert.Equal() Failure\n          ↓ (pos 0)\nExpected: Middle\nActual:   Inner\n          ↑ (pos 0)</pre><pre>   at Microsoft.Diagnostics.Runtime.Tests.MinidumpTests.MinidumpCallstackTest() in /home/raspberry2/Git/clrmd/src/Microsoft.Diagnostics.Runtime.Tests/src/MinidumpTests.cs:line 40</pre></div>
+    <br />
+    <h2>
+      <a id="skipped" />Skipped tests
+          </h2>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.AppDomainPropertyTest<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.ModuleAppDomainEqualityTest<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.ModuleDomainTest<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.SystemAndSharedLibraryModulesTest<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryAsyncNegativeTest<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryAsyncTest<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryNegativeTest<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryTest<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCoreDump_ThrowsPlatformNotSupportedException<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCrashDump_ThrowsInvalidDataException<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCrashDump_ThrowsInvalidDataExceptionForEmptyFile<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.MethodTests.CompleteSignatureIsRetrievedForMethodsWithGenericParameters<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.MethodTests.MethodHandleMultiDomainTests<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.ModuleTests.NoDuplicateModules<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.PEImagePdbTests.ManagedPdbTest<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.PEImagePdbTests.WindowsNativePdbTest<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.PEImageResourceTests.FileInfoVersionTest<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.PEImageResourceTests.TestResourceImages<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.CreationSpecificDacNegativeTest<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.ModuleEnumerationTest<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.ArrayComponentTypeTest<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.CollectibleTypeTest<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.EnumerateMethodTableTest<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.GetObjectMethodTableTest<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.StringEmptyIsObtainableTest<br clear="all" /></div>
+    <div class="altrow">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.TypeEqualityTest<br clear="all" /></div>
+    <div class="row">
+      <span class="timing">Skipped</span>
+      <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.VariableRootTest<br clear="all" /></div>
+    <br />
+    <h2>
+      <a id="all" />All tests
+        </h2>
+    <h5>Click test class name to expand/collapse test details</h5>
+    <h3>
+      <span class="timing">0.000s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EUOAC')" ondblclick="ToggleClass('classID0EUOAC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.AppDomainTests
+               <span class="testcount">
+                (4 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EUOAC">
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.AppDomainPropertyTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.ModuleAppDomainEqualityTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.ModuleDomainTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.SystemAndSharedLibraryModulesTest<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">2.172s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EOHAC')" ondblclick="ToggleClass('classID0EOHAC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.ArrayTests
+               <span class="testcount">
+                (4 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EOHAC">
+      <div class="row">
+        <span class="timing">0.539808s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ArrayTests.ArrayLengthTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.5456507s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ArrayTests.ArrayOffsetsTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.5411562s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ArrayTests.ArrayRankTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.5454666s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ArrayTests.ArrayReferenceEnumeration<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">0.090s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EAJAC')" ondblclick="ToggleClass('classID0EAJAC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests
+               <span class="testcount">
+                (25 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EAJAC">
+      <div class="row">
+        <span class="timing">0.0020848s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenCustomStructArray_GetsStructStartPos(seed: 157)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0027319s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenCustomStructArray_ReturnsPointerToActualData(seed: 137)<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0016096s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenDateTimeArray_GetsStructStartPos(seed: 240)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0015026s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenGuidArray_Throws(seed: 225)<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0029281s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenReferenceArray_ReturnsExpectedElement(setElementIndex: 0)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.000225s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenReferenceArray_ReturnsExpectedElement(setElementIndex: 2)<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.001365s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenReferenceArrayHasNullElement_ReturnsNotEmptyPosition(blankElementIndex: 1)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0025441s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenStringArray_ReturnsExpectedElement(seed: 151)<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0017058s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementsValues_WhenDateTimeArray_GetAllValues<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0129738s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementsValues_WhenDateTimeArray_ReadLessThanAllValues<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0127474s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementsValues_WhenIntArray_GetAllValues<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0035255s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenCustomStructArray_Throws(seed: 13)<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0240692s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenDateTimeArray_Throws(seed: 185)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0038129s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenGuidArray_Throws(seed: 69)<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0015533s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenIntTypeArray_ReturnsExpectedElement(seed: 188)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0021804s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenReferenceArray_ReturnsExpectedElement(setElementIndex: 0)<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0002269s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenReferenceArray_ReturnsExpectedElement(setElementIndex: 2)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0014515s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenReferenceArrayHasNullElement_ReturnsEmptyObject(blankElementIndex: 1)<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0025355s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenStringArray_ReturnsExpectedElement(seed: 23)<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0015096s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenCustomStructArray_ReturnsExpected<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0013466s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenDateTimeArray_ReturnsExpected<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0014838s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenGuidArray_ReturnsExpected<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0012539s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenPrimitiveValueTypeArray_ReturnsExpected<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0014023s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenReferenceArrayWithBlanks_ReturnsExpected<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0013783s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenStringArray_ReturnsExpected<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">0.000s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EXPAC')" ondblclick="ToggleClass('classID0EXPAC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests
+               <span class="testcount">
+                (4 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EXPAC">
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryAsyncNegativeTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryAsyncTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryNegativeTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryTest<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">3.325s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0E6G')" ondblclick="ToggleClass('classID0E6G')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest
+               <span class="testcount">
+                (6 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0E6G">
+      <div class="row">
+        <span class="timing">0.5437623s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.FieldCachingTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.6142496s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.MethodCachingTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.5623096s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.NoFieldCachingTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.5418535s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.NoMethodCachingTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.5327486s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.NoTypeCachingTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.530165s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.TypeCachingTest<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">0.105s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EADAE')" ondblclick="ToggleClass('classID0EADAE')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests
+               <span class="testcount">
+                (10 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EADAE">
+      <div class="row">
+        <span class="timing">0.004851s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetField_WhenBool_ReturnsExpected<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0292646s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetField_WhenEnum_ReturnsExpected<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0410022s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetField_WhenLong_ReturnsExpected<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0057858s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetObjectField_WhenNonExistingField_ThrowsArgumentException<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0022306s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetObjectField_WhenReferenceField_ReturnsPointerToObject<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.002211s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetObjectField_WhenStringField_ReturnsPointerToObject<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0034831s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetStringField_WhenStringField_ReturnsPointerToObject<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0045274s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetStringField_WhenTypeMismatch_ThrowsInvalidOperation<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0095316s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetValueTypeField_WhenDateTime_ThrowsException<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.0021024s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetValueTypeField_WhenGuid_ThrowsException<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">0.551s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0ELAAC')" ondblclick="ToggleClass('classID0ELAAC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.DataTargetTests
+               <span class="testcount">
+                (7 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0ELAAC">
+      <div class="row">
+        <span class="timing">0.0043797s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.CreateSnapshotAndAttach_ThrowsPlatformNotSupportedException<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.5275269s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.EnsureFinalReleaseOfInterfaces<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0107601s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCoreDump_ThrowsInvalidDataException<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCoreDump_ThrowsPlatformNotSupportedException<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCrashDump_ThrowsInvalidDataException<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCrashDump_ThrowsInvalidDataExceptionForEmptyFile<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.0084518s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCrashDump_ThrowsPlatformNotSupportedException<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">0.693s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EFG')" ondblclick="ToggleClass('classID0EFG')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.ExceptionTests
+               <span class="testcount">
+                (1 test)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EFG">
+      <div class="row">
+        <span class="timing">0.6927179s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ExceptionTests.ExceptionPropertyTest<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">0.539s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0ESG')" ondblclick="ToggleClass('classID0ESG')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.FieldTests
+               <span class="testcount">
+                (1 test)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0ESG">
+      <div class="row">
+        <span class="timing">0.5387164s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.FieldTests.InstanceFieldProperties<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">1.264s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0ENIAC')" ondblclick="ToggleClass('classID0ENIAC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.FinalizationQueueTests
+               <span class="testcount">
+                (2 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0ENIAC">
+      <div class="row">
+        <span class="timing">0.5700437s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.FinalizationQueueTests.TestAllFinalizableObjects<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.6935725s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.FinalizationQueueTests.TestFinalizerQueueObjects<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">1.284s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0ESF')" ondblclick="ToggleClass('classID0ESF')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.GCHandleTests
+               <span class="testcount">
+                (2 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0ESF">
+      <div class="row">
+        <span class="timing">0.7062203s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCHandleTests.EnsureAllItemsAreUnique<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.5776417s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCHandleTests.EnsureEnumerationStability<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">11.138s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EYEAC')" ondblclick="ToggleClass('classID0EYEAC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.GCRootTests
+               <span class="testcount">
+                (11 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EYEAC">
+      <div class="row">
+        <span class="timing">0.6536711s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCRootTests.EnumerateAllPathshCancel<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">1.3216277s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCRootTests.EnumerateGCRefs<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.7060466s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCRootTests.EnumerateGCRefsArray<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.7485982s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCRootTests.FindAllPaths<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.6666431s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCRootTests.FindSinglePath<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.9455764s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCRootTests.FindSinglePathCancel<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">1.2505262s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCRootTests.GCRoots<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">1.239284s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCRootTests.GCRootsDirectHandles<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">1.3955614s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCRootTests.GCRootsIndirectHandles<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">1.4109121s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCRootTests.ObjectSetAddRemove<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.7996046s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.GCRootTests.ObjectSetTryAdd<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">9.908s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0ESCAC')" ondblclick="ToggleClass('classID0ESCAC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.HeapTests
+               <span class="testcount">
+                (4 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0ESCAC">
+      <div class="row">
+        <span class="timing">0.6951177s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.HeapTests.HeapEnumeration<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">7.7576855s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.HeapTests.HeapEnumerationWhileClearingCache<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.7742102s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.HeapTests.ServerSegmentTests<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.6813663s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.HeapTests.WorkstationSegmentTests<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">4.654s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EBHAC')" ondblclick="ToggleClass('classID0EBHAC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.MemoryReaderTests
+               <span class="testcount">
+                (1 test)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EBHAC">
+      <div class="row">
+        <span class="timing">4.6537638s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.MemoryReaderTests.SearchMemoryTest<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">2.275s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0E2AAE')" ondblclick="ToggleClass('classID0E2AAE')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.MethodTests
+               <span class="testcount">
+                (3 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0E2AAE">
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.MethodTests.CompleteSignatureIsRetrievedForMethodsWithGenericParameters<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.MethodTests.MethodHandleMultiDomainTests<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">2.2753791s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.MethodTests.MethodHandleSingleDomainTests<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">2.715s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0E4NAC')" ondblclick="ToggleClass('classID0E4NAC')">
+        <span class="failure">✘</span>
+               Microsoft.Diagnostics.Runtime.Tests.MinidumpTests
+               <span class="testcount">
+                (2 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" id="classID0E4NAC">
+      <div class="row">
+        <span class="timing">1.7730697s
+        </span>
+        <span class="failure">✘</span>
+       Microsoft.Diagnostics.Runtime.Tests.MinidumpTests.MinidumpCallstackTest<br clear="all" /><pre>Assert.Equal() Failure\n          ↓ (pos 0)\nExpected: Middle\nActual:   Inner\n          ↑ (pos 0)</pre><pre>   at Microsoft.Diagnostics.Runtime.Tests.MinidumpTests.MinidumpCallstackTest() in /home/raspberry2/Git/clrmd/src/Microsoft.Diagnostics.Runtime.Tests/src/MinidumpTests.cs:line 40</pre></div>
+      <div class="altrow">
+        <span class="timing">0.9414317s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.MinidumpTests.MinidumpExceptionPropertiesTest<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">3.736s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EME')" ondblclick="ToggleClass('classID0EME')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.ModuleTests
+               <span class="testcount">
+                (5 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EME">
+      <div class="row">
+        <span class="timing">0.9579231s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ModuleTests.FileVersionInfoVersionTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">1.1386706s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ModuleTests.ModuleEqualityTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.ModuleTests.NoDuplicateModules<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.5403829s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ModuleTests.TestGetTypeByName<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">1.0994501s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.ModuleTests.TestModuleSize<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">1.093s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0E6BAC')" ondblclick="ToggleClass('classID0E6BAC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.PdbTests
+               <span class="testcount">
+                (2 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0E6BAC">
+      <div class="row">
+        <span class="timing">0.5605796s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.PdbTests.PdbEqualityTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.5324267s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.PdbTests.TestHasPdb<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">0.000s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EWBAE')" ondblclick="ToggleClass('classID0EWBAE')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.PEImagePdbTests
+               <span class="testcount">
+                (2 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EWBAE">
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.PEImagePdbTests.ManagedPdbTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.PEImagePdbTests.WindowsNativePdbTest<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">0.000s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0ELCAE')" ondblclick="ToggleClass('classID0ELCAE')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.PEImageResourceTests
+               <span class="testcount">
+                (2 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0ELCAE">
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.PEImageResourceTests.FileInfoVersionTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.PEImageResourceTests.TestResourceImages<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">2.274s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0ERDAC')" ondblclick="ToggleClass('classID0ERDAC')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.RuntimeTests
+               <span class="testcount">
+                (5 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0ERDAC">
+      <div class="row">
+        <span class="timing">0.54043s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.CreationSpecificDac<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.CreationSpecificDacNegativeTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">1.200651s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.EnsureFlushClearsData<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.ModuleEnumerationTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.532738s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.RuntimeClrInfo<br clear="all" /></div>
+    </div>
+    <h3>
+      <span class="timing">10.926s
+            </span>
+      <span class="clickable" onclick="ToggleClass('classID0EY')" ondblclick="ToggleClass('classID0EY')">
+        <span class="success">✔</span>
+               Microsoft.Diagnostics.Runtime.Tests.TypeTests
+               <span class="testcount">
+                (17 tests)
+              </span></span>
+      <br clear="all" />
+    </h3>
+    <div class="indent" style="display: none;" id="classID0EY">
+      <div class="row">
+        <span class="timing">0.1191119s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.AirtyTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.ArrayComponentTypeTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.7288727s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.AsEnumTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.CollectibleTypeTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">0.6868253s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.ComponentType<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">2.3671305s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.ComponentTypeEventuallyFilledTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.EnumerateMethodTableTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.8467933s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.FieldNameAndValueTests<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">1.2769924s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.GenericTypeTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.GetObjectMethodTableTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">1.2091268s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.InnerStructSizeTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">0.5767923s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.IntegerObjectClrType<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">1.7197211s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.MethodTableHeapEnumeration<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">1.3942115s
+        </span>
+        <span class="success">✔</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.PrimitiveTypeEquality<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.StringEmptyIsObtainableTest<br clear="all" /></div>
+      <div class="altrow">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.TypeEqualityTest<br clear="all" /></div>
+      <div class="row">
+        <span class="timing">Skipped</span>
+        <span class="skipped">❢</span>
+       Microsoft.Diagnostics.Runtime.Tests.TypeTests.VariableRootTest<br clear="all" /></div>
+    </div>
+  </body>
+</html>

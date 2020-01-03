@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assemblies timestamp="01/03/2020 15:52:13">
+  <assembly name="Microsoft.Diagnostics.Runtime.Tests.dll" environment="32-bit .NET Standard [collection-per-class, non-parallel]" test-framework="xUnit.net 2.4.1.0" run-date="2020-01-03" run-time="15:51:10" total="120" passed="92" failed="1" skipped="27" time="62.631" errors="0">
+    <errors />
+    <collection total="17" passed="10" failed="0" skipped="7" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.TypeTests" time="10.926">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.EnumerateMethodTableTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="EnumerateMethodTableTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.AirtyTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="AirtyTest" time="0.1191119" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.ComponentTypeEventuallyFilledTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="ComponentTypeEventuallyFilledTest" time="2.3671305" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.InnerStructSizeTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="InnerStructSizeTest" time="1.2091268" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.GenericTypeTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="GenericTypeTest" time="1.2769924" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.TypeEqualityTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="TypeEqualityTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.PrimitiveTypeEquality" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="PrimitiveTypeEquality" time="1.3942115" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.MethodTableHeapEnumeration" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="MethodTableHeapEnumeration" time="1.7197211" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.GetObjectMethodTableTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="GetObjectMethodTableTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.FieldNameAndValueTests" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="FieldNameAndValueTests" time="0.8467933" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.StringEmptyIsObtainableTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="StringEmptyIsObtainableTest" time="0" result="Skip">
+        <reason><![CDATA[This looks like a bug in mscordac and not ClrMD.]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.IntegerObjectClrType" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="IntegerObjectClrType" time="0.5767923" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.VariableRootTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="VariableRootTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on Windows]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.ComponentType" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="ComponentType" time="0.6868253" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.ArrayComponentTypeTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="ArrayComponentTypeTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.AsEnumTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="AsEnumTest" time="0.7288727" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.TypeTests.CollectibleTypeTest" type="Microsoft.Diagnostics.Runtime.Tests.TypeTests" method="CollectibleTypeTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on Windows]]></reason>
+      </test>
+    </collection>
+    <collection total="5" passed="4" failed="0" skipped="1" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.ModuleTests" time="3.736">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ModuleTests.TestModuleSize" type="Microsoft.Diagnostics.Runtime.Tests.ModuleTests" method="TestModuleSize" time="1.0994501" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ModuleTests.ModuleEqualityTest" type="Microsoft.Diagnostics.Runtime.Tests.ModuleTests" method="ModuleEqualityTest" time="1.1386706" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ModuleTests.FileVersionInfoVersionTest" type="Microsoft.Diagnostics.Runtime.Tests.ModuleTests" method="FileVersionInfoVersionTest" time="0.9579231" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ModuleTests.NoDuplicateModules" type="Microsoft.Diagnostics.Runtime.Tests.ModuleTests" method="NoDuplicateModules" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ModuleTests.TestGetTypeByName" type="Microsoft.Diagnostics.Runtime.Tests.ModuleTests" method="TestGetTypeByName" time="0.5403829" result="Pass" />
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.GCHandleTests" time="1.284">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCHandleTests.EnsureAllItemsAreUnique" type="Microsoft.Diagnostics.Runtime.Tests.GCHandleTests" method="EnsureAllItemsAreUnique" time="0.7062203" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCHandleTests.EnsureEnumerationStability" type="Microsoft.Diagnostics.Runtime.Tests.GCHandleTests" method="EnsureEnumerationStability" time="0.5776417" result="Pass" />
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.ExceptionTests" time="0.693">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ExceptionTests.ExceptionPropertyTest" type="Microsoft.Diagnostics.Runtime.Tests.ExceptionTests" method="ExceptionPropertyTest" time="0.6927179" result="Pass" />
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.FieldTests" time="0.539">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.FieldTests.InstanceFieldProperties" type="Microsoft.Diagnostics.Runtime.Tests.FieldTests" method="InstanceFieldProperties" time="0.5387164" result="Pass" />
+    </collection>
+    <collection total="6" passed="6" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest" time="3.325">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.MethodCachingTest" type="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest" method="MethodCachingTest" time="0.6142496" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.TypeCachingTest" type="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest" method="TypeCachingTest" time="0.530165" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.NoFieldCachingTest" type="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest" method="NoFieldCachingTest" time="0.5623096" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.NoTypeCachingTest" type="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest" method="NoTypeCachingTest" time="0.5327486" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.FieldCachingTest" type="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest" method="FieldCachingTest" time="0.5437623" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest.NoMethodCachingTest" type="Microsoft.Diagnostics.Runtime.Tests.CacheOptionsTest" method="NoMethodCachingTest" time="0.5418535" result="Pass" />
+    </collection>
+    <collection total="7" passed="4" failed="0" skipped="3" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.DataTargetTests" time="0.551">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCrashDump_ThrowsInvalidDataExceptionForEmptyFile" type="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests" method="LoadCrashDump_ThrowsInvalidDataExceptionForEmptyFile" time="0" result="Skip">
+        <reason><![CDATA[Only supported on Windows]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCrashDump_ThrowsPlatformNotSupportedException" type="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests" method="LoadCrashDump_ThrowsPlatformNotSupportedException" time="0.0084518" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.EnsureFinalReleaseOfInterfaces" type="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests" method="EnsureFinalReleaseOfInterfaces" time="0.5275269" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCrashDump_ThrowsInvalidDataException" type="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests" method="LoadCrashDump_ThrowsInvalidDataException" time="0" result="Skip">
+        <reason><![CDATA[Only supported on Windows]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCoreDump_ThrowsInvalidDataException" type="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests" method="LoadCoreDump_ThrowsInvalidDataException" time="0.0107601" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.CreateSnapshotAndAttach_ThrowsPlatformNotSupportedException" type="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests" method="CreateSnapshotAndAttach_ThrowsPlatformNotSupportedException" time="0.0043797" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests.LoadCoreDump_ThrowsPlatformNotSupportedException" type="Microsoft.Diagnostics.Runtime.Tests.DataTargetTests" method="LoadCoreDump_ThrowsPlatformNotSupportedException" time="0" result="Skip">
+        <reason><![CDATA[Only supported on Windows]]></reason>
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.PdbTests" time="1.093">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.PdbTests.PdbEqualityTest" type="Microsoft.Diagnostics.Runtime.Tests.PdbTests" method="PdbEqualityTest" time="0.5605796" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.PdbTests.TestHasPdb" type="Microsoft.Diagnostics.Runtime.Tests.PdbTests" method="TestHasPdb" time="0.5324267" result="Pass" />
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.HeapTests" time="9.908">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.HeapTests.HeapEnumeration" type="Microsoft.Diagnostics.Runtime.Tests.HeapTests" method="HeapEnumeration" time="0.6951177" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.HeapTests.WorkstationSegmentTests" type="Microsoft.Diagnostics.Runtime.Tests.HeapTests" method="WorkstationSegmentTests" time="0.6813663" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.HeapTests.HeapEnumerationWhileClearingCache" type="Microsoft.Diagnostics.Runtime.Tests.HeapTests" method="HeapEnumerationWhileClearingCache" time="7.7576855" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.HeapTests.ServerSegmentTests" type="Microsoft.Diagnostics.Runtime.Tests.HeapTests" method="ServerSegmentTests" time="0.7742102" result="Pass" />
+    </collection>
+    <collection total="5" passed="3" failed="0" skipped="2" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.RuntimeTests" time="2.274">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.CreationSpecificDac" type="Microsoft.Diagnostics.Runtime.Tests.RuntimeTests" method="CreationSpecificDac" time="0.54043" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.CreationSpecificDacNegativeTest" type="Microsoft.Diagnostics.Runtime.Tests.RuntimeTests" method="CreationSpecificDacNegativeTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on Windows]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.RuntimeClrInfo" type="Microsoft.Diagnostics.Runtime.Tests.RuntimeTests" method="RuntimeClrInfo" time="0.532738" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.ModuleEnumerationTest" type="Microsoft.Diagnostics.Runtime.Tests.RuntimeTests" method="ModuleEnumerationTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.RuntimeTests.EnsureFlushClearsData" type="Microsoft.Diagnostics.Runtime.Tests.RuntimeTests" method="EnsureFlushClearsData" time="1.200651" result="Pass" />
+    </collection>
+    <collection total="11" passed="11" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.GCRootTests" time="11.138">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCRootTests.FindSinglePathCancel" type="Microsoft.Diagnostics.Runtime.Tests.GCRootTests" method="FindSinglePathCancel" time="0.9455764" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCRootTests.EnumerateGCRefsArray" type="Microsoft.Diagnostics.Runtime.Tests.GCRootTests" method="EnumerateGCRefsArray" time="0.7060466" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCRootTests.ObjectSetAddRemove" type="Microsoft.Diagnostics.Runtime.Tests.GCRootTests" method="ObjectSetAddRemove" time="1.4109121" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCRootTests.EnumerateGCRefs" type="Microsoft.Diagnostics.Runtime.Tests.GCRootTests" method="EnumerateGCRefs" time="1.3216277" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCRootTests.ObjectSetTryAdd" type="Microsoft.Diagnostics.Runtime.Tests.GCRootTests" method="ObjectSetTryAdd" time="0.7996046" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCRootTests.FindAllPaths" type="Microsoft.Diagnostics.Runtime.Tests.GCRootTests" method="FindAllPaths" time="0.7485982" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCRootTests.GCRoots" type="Microsoft.Diagnostics.Runtime.Tests.GCRootTests" method="GCRoots" time="1.2505262" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCRootTests.FindSinglePath" type="Microsoft.Diagnostics.Runtime.Tests.GCRootTests" method="FindSinglePath" time="0.6666431" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCRootTests.GCRootsDirectHandles" type="Microsoft.Diagnostics.Runtime.Tests.GCRootTests" method="GCRootsDirectHandles" time="1.239284" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCRootTests.EnumerateAllPathshCancel" type="Microsoft.Diagnostics.Runtime.Tests.GCRootTests" method="EnumerateAllPathshCancel" time="0.6536711" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.GCRootTests.GCRootsIndirectHandles" type="Microsoft.Diagnostics.Runtime.Tests.GCRootTests" method="GCRootsIndirectHandles" time="1.3955614" result="Pass" />
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.MemoryReaderTests" time="4.654">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.MemoryReaderTests.SearchMemoryTest" type="Microsoft.Diagnostics.Runtime.Tests.MemoryReaderTests" method="SearchMemoryTest" time="4.6537638" result="Pass" />
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.ArrayTests" time="2.172">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ArrayTests.ArrayRankTest" type="Microsoft.Diagnostics.Runtime.Tests.ArrayTests" method="ArrayRankTest" time="0.5411562" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ArrayTests.ArrayLengthTest" type="Microsoft.Diagnostics.Runtime.Tests.ArrayTests" method="ArrayLengthTest" time="0.539808" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ArrayTests.ArrayReferenceEnumeration" type="Microsoft.Diagnostics.Runtime.Tests.ArrayTests" method="ArrayReferenceEnumeration" time="0.5454666" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ArrayTests.ArrayOffsetsTest" type="Microsoft.Diagnostics.Runtime.Tests.ArrayTests" method="ArrayOffsetsTest" time="0.5456507" result="Pass" />
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.FinalizationQueueTests" time="1.264">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.FinalizationQueueTests.TestFinalizerQueueObjects" type="Microsoft.Diagnostics.Runtime.Tests.FinalizationQueueTests" method="TestFinalizerQueueObjects" time="0.6935725" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.FinalizationQueueTests.TestAllFinalizableObjects" type="Microsoft.Diagnostics.Runtime.Tests.FinalizationQueueTests" method="TestAllFinalizableObjects" time="0.5700437" result="Pass" />
+    </collection>
+    <collection total="25" passed="25" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" time="0.090">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenDateTimeArray_Throws(seed: 185)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementValue_WhenDateTimeArray_Throws" time="0.0240692" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenCustomStructArray_GetsStructStartPos(seed: 157)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementAddress_WhenCustomStructArray_GetsStructStartPos" time="0.0020848" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenGuidArray_Throws(seed: 69)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementValue_WhenGuidArray_Throws" time="0.0038129" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenReferenceArray_ReturnsExpectedElement(setElementIndex: 0)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementValue_WhenReferenceArray_ReturnsExpectedElement" time="0.0021804" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenReferenceArray_ReturnsExpectedElement(setElementIndex: 2)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementValue_WhenReferenceArray_ReturnsExpectedElement" time="0.0002269" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenGuidArray_ReturnsExpected" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="Length_WhenGuidArray_ReturnsExpected" time="0.0014838" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenDateTimeArray_GetsStructStartPos(seed: 240)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementAddress_WhenDateTimeArray_GetsStructStartPos" time="0.0016096" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenReferenceArrayWithBlanks_ReturnsExpected" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="Length_WhenReferenceArrayWithBlanks_ReturnsExpected" time="0.0014023" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenPrimitiveValueTypeArray_ReturnsExpected" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="Length_WhenPrimitiveValueTypeArray_ReturnsExpected" time="0.0012539" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenCustomStructArray_ReturnsExpected" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="Length_WhenCustomStructArray_ReturnsExpected" time="0.0015096" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenReferenceArrayHasNullElement_ReturnsNotEmptyPosition(blankElementIndex: 1)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementAddress_WhenReferenceArrayHasNullElement_ReturnsNotEmptyPosition" time="0.001365" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenReferenceArray_ReturnsExpectedElement(setElementIndex: 0)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementAddress_WhenReferenceArray_ReturnsExpectedElement" time="0.0029281" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenReferenceArray_ReturnsExpectedElement(setElementIndex: 2)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementAddress_WhenReferenceArray_ReturnsExpectedElement" time="0.000225" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementsValues_WhenIntArray_GetAllValues" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementsValues_WhenIntArray_GetAllValues" time="0.0127474" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenIntTypeArray_ReturnsExpectedElement(seed: 188)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementValue_WhenIntTypeArray_ReturnsExpectedElement" time="0.0015533" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementsValues_WhenDateTimeArray_ReadLessThanAllValues" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementsValues_WhenDateTimeArray_ReadLessThanAllValues" time="0.0129738" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenGuidArray_Throws(seed: 225)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementAddress_WhenGuidArray_Throws" time="0.0015026" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenReferenceArrayHasNullElement_ReturnsEmptyObject(blankElementIndex: 1)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementValue_WhenReferenceArrayHasNullElement_ReturnsEmptyObject" time="0.0014515" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenCustomStructArray_Throws(seed: 13)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementValue_WhenCustomStructArray_Throws" time="0.0035255" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementsValues_WhenDateTimeArray_GetAllValues" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementsValues_WhenDateTimeArray_GetAllValues" time="0.0017058" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenDateTimeArray_ReturnsExpected" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="Length_WhenDateTimeArray_ReturnsExpected" time="0.0013466" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementValue_WhenStringArray_ReturnsExpectedElement(seed: 23)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementValue_WhenStringArray_ReturnsExpectedElement" time="0.0025355" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.Length_WhenStringArray_ReturnsExpected" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="Length_WhenStringArray_ReturnsExpected" time="0.0013783" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenStringArray_ReturnsExpectedElement(seed: 151)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementAddress_WhenStringArray_ReturnsExpectedElement" time="0.0025441" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests.GetArrayElementAddress_WhenCustomStructArray_ReturnsPointerToActualData(seed: 137)" type="Microsoft.Diagnostics.Runtime.Tests.BasicArrayTests" method="GetArrayElementAddress_WhenCustomStructArray_ReturnsPointerToActualData" time="0.0027319" result="Pass" />
+    </collection>
+    <collection total="2" passed="1" failed="1" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.MinidumpTests" time="2.715">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.MinidumpTests.MinidumpExceptionPropertiesTest" type="Microsoft.Diagnostics.Runtime.Tests.MinidumpTests" method="MinidumpExceptionPropertiesTest" time="0.9414317" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.MinidumpTests.MinidumpCallstackTest" type="Microsoft.Diagnostics.Runtime.Tests.MinidumpTests" method="MinidumpCallstackTest" time="1.7730697" result="Fail">
+        <failure exception-type="Xunit.Sdk.EqualException">
+          <message><![CDATA[Assert.Equal() Failure\n          ↓ (pos 0)\nExpected: Middle\nActual:   Inner\n          ↑ (pos 0)]]></message>
+          <stack-trace><![CDATA[   at Microsoft.Diagnostics.Runtime.Tests.MinidumpTests.MinidumpCallstackTest() in /home/raspberry2/Git/clrmd/src/Microsoft.Diagnostics.Runtime.Tests/src/MinidumpTests.cs:line 40]]></stack-trace>
+        </failure>
+      </test>
+    </collection>
+    <collection total="4" passed="0" failed="0" skipped="4" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.AppDomainTests" time="0.000">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.ModuleDomainTest" type="Microsoft.Diagnostics.Runtime.Tests.AppDomainTests" method="ModuleDomainTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.ModuleAppDomainEqualityTest" type="Microsoft.Diagnostics.Runtime.Tests.AppDomainTests" method="ModuleAppDomainEqualityTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.AppDomainPropertyTest" type="Microsoft.Diagnostics.Runtime.Tests.AppDomainTests" method="AppDomainPropertyTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.AppDomainTests.SystemAndSharedLibraryModulesTest" type="Microsoft.Diagnostics.Runtime.Tests.AppDomainTests" method="SystemAndSharedLibraryModulesTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+    </collection>
+    <collection total="4" passed="0" failed="0" skipped="4" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests" time="0.000">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryAsyncTest" type="Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests" method="FindBinaryAsyncTest" time="0" result="Skip">
+        <reason><![CDATA[Touches network, don't run regularly.]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryNegativeTest" type="Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests" method="FindBinaryNegativeTest" time="0" result="Skip">
+        <reason><![CDATA[Touches network, don't run regularly.]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryTest" type="Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests" method="FindBinaryTest" time="0" result="Skip">
+        <reason><![CDATA[Touches network, don't run regularly.]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests.FindBinaryAsyncNegativeTest" type="Microsoft.Diagnostics.Runtime.Tests.BinaryLocatorTests" method="FindBinaryAsyncNegativeTest" time="0" result="Skip">
+        <reason><![CDATA[Touches network, don't run regularly.]]></reason>
+      </test>
+    </collection>
+    <collection total="3" passed="1" failed="0" skipped="2" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.MethodTests" time="2.275">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.MethodTests.CompleteSignatureIsRetrievedForMethodsWithGenericParameters" type="Microsoft.Diagnostics.Runtime.Tests.MethodTests" method="CompleteSignatureIsRetrievedForMethodsWithGenericParameters" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.MethodTests.MethodHandleMultiDomainTests" type="Microsoft.Diagnostics.Runtime.Tests.MethodTests" method="MethodHandleMultiDomainTests" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.MethodTests.MethodHandleSingleDomainTests" type="Microsoft.Diagnostics.Runtime.Tests.MethodTests" method="MethodHandleSingleDomainTests" time="2.2753791" result="Pass" />
+    </collection>
+    <collection total="2" passed="0" failed="0" skipped="2" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.PEImagePdbTests" time="0.000">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.PEImagePdbTests.WindowsNativePdbTest" type="Microsoft.Diagnostics.Runtime.Tests.PEImagePdbTests" method="WindowsNativePdbTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.PEImagePdbTests.ManagedPdbTest" type="Microsoft.Diagnostics.Runtime.Tests.PEImagePdbTests" method="ManagedPdbTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+    </collection>
+    <collection total="2" passed="0" failed="0" skipped="2" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.PEImageResourceTests" time="0.000">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.PEImageResourceTests.FileInfoVersionTest" type="Microsoft.Diagnostics.Runtime.Tests.PEImageResourceTests" method="FileInfoVersionTest" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+      <test name="Microsoft.Diagnostics.Runtime.Tests.PEImageResourceTests.TestResourceImages" type="Microsoft.Diagnostics.Runtime.Tests.PEImageResourceTests" method="TestResourceImages" time="0" result="Skip">
+        <reason><![CDATA[Only supported on .NET Framework]]></reason>
+      </test>
+    </collection>
+    <collection total="10" passed="10" failed="0" skipped="0" name="Test collection for Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests" time="0.105">
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetField_WhenLong_ReturnsExpected" type="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests" method="GetField_WhenLong_ReturnsExpected" time="0.0410022" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetValueTypeField_WhenDateTime_ThrowsException" type="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests" method="GetValueTypeField_WhenDateTime_ThrowsException" time="0.0095316" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetObjectField_WhenNonExistingField_ThrowsArgumentException" type="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests" method="GetObjectField_WhenNonExistingField_ThrowsArgumentException" time="0.0057858" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetStringField_WhenTypeMismatch_ThrowsInvalidOperation" type="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests" method="GetStringField_WhenTypeMismatch_ThrowsInvalidOperation" time="0.0045274" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetStringField_WhenStringField_ReturnsPointerToObject" type="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests" method="GetStringField_WhenStringField_ReturnsPointerToObject" time="0.0034831" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetObjectField_WhenReferenceField_ReturnsPointerToObject" type="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests" method="GetObjectField_WhenReferenceField_ReturnsPointerToObject" time="0.0022306" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetValueTypeField_WhenGuid_ThrowsException" type="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests" method="GetValueTypeField_WhenGuid_ThrowsException" time="0.0021024" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetField_WhenEnum_ReturnsExpected" type="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests" method="GetField_WhenEnum_ReturnsExpected" time="0.0292646" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetField_WhenBool_ReturnsExpected" type="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests" method="GetField_WhenBool_ReturnsExpected" time="0.004851" result="Pass" />
+      <test name="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests.GetObjectField_WhenStringField_ReturnsPointerToObject" type="Microsoft.Diagnostics.Runtime.Tests.ClrObjectTests" method="GetObjectField_WhenStringField_ReturnsPointerToObject" time="0.002211" result="Pass" />
+    </collection>
+  </assembly>
+</assemblies>
