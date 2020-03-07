@@ -351,7 +351,7 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
                 throw new Exception();
         }
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int GetMetadataDelegate(
             IntPtr self,
             [In][MarshalAs(UnmanagedType.LPWStr)] string filename,
@@ -364,16 +364,16 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             IntPtr buffer,
             int* dataSize);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int GetMachineTypeDelegate(IntPtr self, out IMAGE_FILE_MACHINE machineType);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int GetPointerSizeDelegate(IntPtr self, out uint pointerSize);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int GetImageBaseDelegate(IntPtr self, [In][MarshalAs(UnmanagedType.LPWStr)] string imagePath, out ulong baseAddress);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int ReadVirtualDelegate(
             IntPtr self,
             ulong address,
@@ -381,7 +381,7 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             int bytesRequested,
             out int bytesRead);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int WriteVirtualDelegate(
             IntPtr self,
             ulong address,
@@ -389,24 +389,24 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             uint bytesRequested,
             out uint bytesWritten);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int GetTLSValueDelegate(
             IntPtr self,
             uint threadID,
             uint index,
             out ulong value);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int SetTLSValueDelegate(
             IntPtr self,
             uint threadID,
             uint index,
             ulong value);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int GetCurrentThreadIDDelegate(IntPtr self, out uint threadID);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int GetThreadContextDelegate(
             IntPtr self,
             uint threadID,
@@ -414,14 +414,14 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             uint contextSize,
             IntPtr context);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int SetThreadContextDelegate(
             IntPtr self,
             uint threadID,
             uint contextSize,
             IntPtr context);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int RequestDelegate(
             IntPtr self,
             uint reqCode,

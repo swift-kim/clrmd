@@ -22,6 +22,10 @@
     <DocumentationFile>Microsoft.Diagnostics.Runtime.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(RuntimeIdentifier)' == 'linux-x86'">
+    <DefineConstants>$(DefineConstants);TARGET_LINUX_X86</DefineConstants>
+  </PropertyGroup>
+
   <ItemGroup>
     <Content Include="License-Stable.rtf">
       <Pack>true</Pack>

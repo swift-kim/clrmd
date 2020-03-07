@@ -145,13 +145,13 @@ namespace Microsoft.Diagnostics.Runtime
             }
         }
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int DllMain(IntPtr instance, int reason, IntPtr reserved);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int PAL_Initialize();
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConventionExtension.Pal)]
         private delegate int CreateDacInstance(
             ref Guid riid,
             IntPtr dacDataInterface,
