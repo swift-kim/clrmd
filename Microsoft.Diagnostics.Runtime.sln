@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Diagnostics.Runti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Diagnostics.Runtime.Utilities", "src\Microsoft.Diagnostics.Runtime.Utilities\Microsoft.Diagnostics.Runtime.Utilities.csproj", "{46E0ED79-1CAD-4876-919D-A736CE47A4F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintStackTrace", "PrintStackTrace\PrintStackTrace.csproj", "{004516A9-2877-435F-BEE0-2AAE7674E713}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,10 +35,10 @@ Global
 		{46E0ED79-1CAD-4876-919D-A736CE47A4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46E0ED79-1CAD-4876-919D-A736CE47A4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46E0ED79-1CAD-4876-919D-A736CE47A4F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9440A1F6-BF51-48C0-A382-09AE99C0DC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9440A1F6-BF51-48C0-A382-09AE99C0DC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9440A1F6-BF51-48C0-A382-09AE99C0DC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9440A1F6-BF51-48C0-A382-09AE99C0DC30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{004516A9-2877-435F-BEE0-2AAE7674E713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{004516A9-2877-435F-BEE0-2AAE7674E713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{004516A9-2877-435F-BEE0-2AAE7674E713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{004516A9-2877-435F-BEE0-2AAE7674E713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
