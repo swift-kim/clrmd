@@ -747,6 +747,13 @@ namespace Microsoft.Diagnostics.Runtime.Desktop
                         ReadPointer(sp, out frameVtbl);
                     }
 
+                    if (PointerSize == 4)
+                    {
+                        ip = (ulong)(int)ip;
+                        sp = (ulong)(int)sp;
+                        frameVtbl = (ulong)(int)frameVtbl;
+                    }
+
                     byte[] contextCopy = new byte[context.Length];
                     Buffer.BlockCopy(context, 0, contextCopy, 0, context.Length);
 
