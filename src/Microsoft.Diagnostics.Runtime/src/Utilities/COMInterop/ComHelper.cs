@@ -20,13 +20,13 @@ namespace Microsoft.Diagnostics.Runtime.Utilities
 
         protected readonly Guid IUnknownGuid = new Guid("00000000-0000-0000-C000-000000000046");
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         protected delegate int AddRefDelegate(IntPtr self);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         protected delegate int ReleaseDelegate(IntPtr self);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         protected delegate int QueryInterfaceDelegate(IntPtr self, ref Guid guid, out IntPtr ptr);
 
         /// <summary>

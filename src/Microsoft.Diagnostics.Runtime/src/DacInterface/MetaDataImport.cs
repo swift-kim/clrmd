@@ -203,16 +203,16 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             return tokens;
         }
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         private delegate int CloseEnumDelegate(IntPtr self, IntPtr e);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         private delegate int EnumInterfaceImplsDelegate(IntPtr self, ref IntPtr phEnum, int td, [Out] int[] rImpls, int cMax, out int pCount);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         private delegate int GetInterfaceImplPropsDelegate(IntPtr self, int mdImpl, out int mdClass, out int mdIFace);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         private delegate int GetTypeRefPropsDelegate(
             IntPtr self,
             int token,
@@ -221,7 +221,7 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             int bufferSize,
             out int needed);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         private delegate int GetTypeDefPropsDelegate(
             IntPtr self,
             int token,
@@ -231,13 +231,13 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             out TypeAttributes pdwTypeDefFlags,
             out int ptkExtends);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         private delegate int EnumFieldsDelegate(IntPtr self, ref IntPtr phEnum, int cl, int[] mdFieldDef, int cMax, out int pcTokens);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         private delegate int GetRVADelegate(IntPtr self, int token, out uint pRva, out uint flags);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         private delegate int GetMethodPropsDelegate(
             IntPtr self,
             int md,
@@ -251,10 +251,10 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             out uint pulCodeRVA,
             out uint pdwImplFlags);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         private delegate int GetNestedClassPropsDelegate(IntPtr self, int tdNestedClass, out int tdEnclosingClass);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         private delegate int GetFieldPropsDelegate(
             IntPtr self,
             int mb,
@@ -269,7 +269,7 @@ namespace Microsoft.Diagnostics.Runtime.DacInterface
             out IntPtr ppValue,
             out int pcchValue);
 
-        [UnmanagedFunctionPointer(CallingConvention.StdCall)]
+        [UnmanagedFunctionPointer(CallingConvention.Winapi)]
         private delegate int GetCustomAttributeByNameDelegate(IntPtr self, int tkObj, [MarshalAs(UnmanagedType.LPWStr)] string szName, out IntPtr ppData, out uint pcbData);
     }
 
